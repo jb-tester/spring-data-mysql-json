@@ -1,0 +1,38 @@
+[
+  {
+    "name": "spring",
+    "state": "development"
+  },
+  {
+    "name": "javaee",
+    "state": "development"
+  },
+  {
+    "name": "jpa",
+    "state": "development"
+  },
+  {
+    "name": "microservices",
+    "state": "development"
+  },
+  {
+    "name": "jboss",
+    "state": "support"
+  },
+  {
+    "name": "docker",
+    "state": "development"
+  },
+  {
+    "name": "diagrams",
+    "state": "support"
+  },
+  {
+    "name": "appservers",
+    "state": "support"
+  },
+  {
+    "name": "http client",
+    "state": "development"
+  }
+]

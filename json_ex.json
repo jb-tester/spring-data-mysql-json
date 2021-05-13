@@ -1,0 +1,57 @@
+{
+  "developers": [
+    {
+      "name": "vanya",
+      "responsible_for": [
+        "github",
+        "git authentication"
+      ]
+    },
+    {
+      "name": "julia",
+      "responsible_for": [
+        "git/hg log",
+        "history",
+        "stash"
+      ]
+    },
+    {
+      "name": "lesha",
+      "responsible_for": [
+        "diff",
+        "vcs general"
+      ]
+    },
+    {
+      "name": "kostya",
+      "responsible_for": [
+        "commit",
+        "svn"
+      ]
+    },
+    {
+      "name": "nadya",
+      "responsible_for": [
+        "hg",
+        "patches"
+      ]
+    },
+    {
+      "name": "dima",
+      "responsible_for": [
+        "cvs",
+        "perforce",
+        "tfs",
+        "clearcase"
+      ]
+    }
+  ],
+  "qa": [
+    "veronika",
+    "vika"
+  ],
+  "support": [
+    "dima"
+  ],
+  "lead": "nadya"
+}
