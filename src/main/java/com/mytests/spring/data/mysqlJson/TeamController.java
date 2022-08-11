@@ -33,19 +33,19 @@ public class TeamController {
     @GetMapping("/developers")
     public String getAllDevelopers(){
 
-        String rez="";
+        StringBuilder rez= new StringBuilder();
         for (TeamEntity teamEntity : teamRepository.findAll()) {
-            rez = rez +"\n"+ teamEntity.getDevelopers();
+            rez.append("\n").append(teamEntity.getDevelopers());
         }
-        return rez;
+        return rez.toString();
     }
 
     @GetMapping("/test_formula_field")
     public String testFF(){
-        String rez = "";
+        StringBuilder rez = new StringBuilder();
         for (TeamEntity entity : teamRepository.findByDevelopersContains("sasha")) {
-            rez = rez+"\n"+entity.getTransformedName()+" developers: "+entity.getDevelopers();
+            rez.append("\n").append(entity.getTransformedName()).append(" developers: ").append(entity.getDevelopers());
         }
-        return rez;
+        return rez.toString();
     }
 }
