@@ -1,12 +1,17 @@
 package com.mytests.spring.data.mysqlJson;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.MessageSource;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 /**
  * *
@@ -17,8 +22,11 @@ import java.util.Map;
 @RestController
 public class TeamController {
 
+
+
     @Autowired
     private TeamRepository teamRepository;
+
 
     @GetMapping("/qa/{qa}")
     public String teams_by_qa(@PathVariable("qa") String qa) {

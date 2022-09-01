@@ -17,7 +17,7 @@ import java.util.List;
 public interface TeamRepository extends CrudRepository<TeamEntity,Integer> {
 
 
-    @Query(nativeQuery = true, value = "select * from team where members->'$.qa' = JSON_ARRAY(:name)")
+    @Query(nativeQuery = true, value = "select * from jbtests.team where members->'$.qa' = JSON_ARRAY(:name)")
     List<TeamEntity> findTeamWhereSpecificQaWorks(@Param("name") String name);
 
     List<TeamEntity> findByDevelopersContains(String developers);
